@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class CapitalizeWord {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter a word: ");
+        String word = input.nextLine();
+
+        if (word.length() > 0) {
+            char first = Character.toUpperCase(word.charAt(0));
+            String result = first + word.substring(1);
+            System.out.println(result);
+        }
+
+        input.close();
+    }
+}
