@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class UniqueNumber {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter a: ");
+        int a = input.nextInt();
+
+        System.out.print("Enter b: ");
+        int b = input.nextInt();
+
+        System.out.print("Enter c: ");
+        int c = input.nextInt();
+
+        if (a == b) {
+            System.out.println("Unique number: " + c);
+        } else if (a == c) {
+            System.out.println("Unique number: " + b);
+        } else {
+            System.out.println("Unique number: " + a);
+        }
+
+        input.close();
+    }
+}
