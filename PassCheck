@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class PassCheck {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter number of sections (X): ");
+        int X = input.nextInt();
+
+        System.out.print("Enter students per section (Y): ");
+        int Y = input.nextInt();
+
+        System.out.print("Enter passed students (Z): ");
+        int Z = input.nextInt();
+
+        if (Z * 2 > X * Y) {
+            System.out.println("Yes");
+        } else {
+            System.out.println("No");
+        }
+
+        input.close();
+    }
+}
