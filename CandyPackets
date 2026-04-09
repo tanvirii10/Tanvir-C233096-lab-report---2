@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class CandyPackets {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter number of children (N): ");
+        int N = input.nextInt();
+
+        System.out.print("Enter candies already have (X): ");
+        int X = input.nextInt();
+
+        int need = N - X;
+
+        int packets;
+        if (need <= 0) {
+            packets = 0;
+        } else {
+            packets = (need + 3) / 4; // ceiling division
+        }
+
+        System.out.println("Minimum packets needed: " + packets);
+
+        input.close();
+    }
+}
