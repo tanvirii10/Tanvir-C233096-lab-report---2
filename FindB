@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class FindB {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter A: ");
+        int A = input.nextInt();
+
+        System.out.print("Enter C: ");
+        int C = input.nextInt();
+
+        if ((A + C) % 2 == 0) {
+            int B = (A + C) / 2;
+            System.out.println("B exists: " + B);
+        } else {
+            System.out.println("No integer B exists");
+        }
+
+        input.close();
+    }
+}
