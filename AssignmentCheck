@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class AssignmentCheck {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter starting time (X pm): ");
+        int X = input.nextInt();
+
+        if (X + 3 <= 10) {
+            System.out.println("Yes");
+        } else {
+            System.out.println("No");
+        }
+
+        input.close();
+    }
+}
