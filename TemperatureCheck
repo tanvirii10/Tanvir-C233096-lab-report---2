@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class TemperatureCheck {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter A: ");
+        int A = input.nextInt();
+
+        System.out.print("Enter B: ");
+        int B = input.nextInt();
+
+        System.out.print("Enter C: ");
+        int C = input.nextInt();
+
+        int maxTemp = Math.max(A, C);
+
+        if (maxTemp <= B) {
+            System.out.println("Yes");
+        } else {
+            System.out.println("No");
+        }
+
+        input.close();
+    }
+}
